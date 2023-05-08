@@ -28,6 +28,11 @@
       Delete
     </.link>
   </:action>
+  <:action :let={{_id, space}}>
+    <.link href={~p"/s/#{space}"}>
+      Enter
+    </.link>
+  </:action>
 </.table>
 
 <.modal :if={@live_action in [:new, :edit]} id="space-modal" show on_cancel={JS.patch(~p"/spaces")}>

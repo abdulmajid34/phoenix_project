@@ -11,6 +11,7 @@ defmodule PhoenixFramework.WorldsFixtures do
     {:ok, space} =
       attrs
       |> Enum.into(%{
+        id: PhoenixFramework.Utils.random_string(5),
         description: "some description",
         name: "some name"
       })

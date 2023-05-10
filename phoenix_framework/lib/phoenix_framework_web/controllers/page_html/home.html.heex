@@ -1,8 +1,67 @@
-<div class=" flex justify-center items-center h-full">
-  <div class="">
-      <h1 class="text-lg text-center my-14">Welcome to Phoenix Framework Project</h1>
-      <button class=" bg-orange-400 mx-16 text-white font-bold py-2 px-4 rounded hover:bg-amber-800">
-          <a href="/spaces" class=" text-decoration-none">Go To Dashboard</a>
-      </button>
+<div class="">
+  <h1 class=" text-lg pl-8">Dashboard</h1>
+  <div class=" h-screen bg-slate-400">
+    <div class=" flex justify-start items-start my-4 py-6 pl-4">
+      <h4 class="mx-4">Title</h4>
+      <button class=" rounded bg-white border-b-4 border-r-4 border-2 border-black px-4">Create</button>
+    </div>
+
+    <div class=" mx-4 bg-white h-screen">
+      <div class=" flex justify-between py-4 px-4">
+        <div>
+          <select class="" name="select" id="select">
+            <option value="1">satu</option>
+            <option value="2">dua</option>
+            <option value="3">tiga</option>
+          </select>
+          <button class=" border rounded border-b-4 border-r-4 border-black px-4">
+            click
+          </button>
+        </div>
+        <div>
+          <button class=" rounded border-2 px-4">
+            list
+          </button>
+          <button class=" rounded border-2 px-4">
+            sort
+          </button>
+        </div>
+      </div>
+      <div class="py-4">
+        <table class="table-auto mx-4">
+          <thead class="">
+            <tr>
+              <th class=" w-64 border-t-2 border-b-2 px-4 py-2">#</th>
+              <th class=" w-64 border-t-2 border-b-2 px-4 py-2">Name</th>
+              <th class=" w-64 border-t-2 border-b-2 px-4 py-2">Email</th>
+              <th class=" w-64 border-t-2 border-b-2 px-4 py-2">Role</th>
+              <th class=" w-64 border-t-2 border-b-2 px-4 py-2">Role</th>
+              <th class=" w-64 border-t-2 border-b-2 px-4 py-2">Role</th>
+              <th class=" w-64 border-t-2 border-b-2 px-4 py-2">Role</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class=" text-center px-4 py-2">1</td>
+              <td class=" text-center px-4 py-2">John Doe</td>
+              <td class=" text-center px-4 py-2">john@example.com</td>
+              <td class=" text-center px-4 py-2">Admin</td>
+              <td class=" text-center px-4 py-2">Admin</td>
+              <td class=" text-center px-4 py-2">Admin</td>
+              <td class=" text-center px-4 py-2">Admin</td>
+            </tr>
+            <tr>
+              <td class=" text-center px-4 py-2">2</td>
+              <td class=" text-center px-4 py-2">Jane Smith</td>
+              <td class=" text-center px-4 py-2">jane@example.com</td>
+              <td class=" text-center px-4 py-2">User</td>
+              <td class=" text-center px-4 py-2">User</td>
+              <td class=" text-center px-4 py-2">User</td>
+              <td class=" text-center px-4 py-2">User</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>

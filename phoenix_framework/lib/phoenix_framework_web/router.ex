@@ -22,6 +22,7 @@ defmodule PhoenixFrameworkWeb.Router do
 
     get "/", PageController, :home
     get "/s/:space_id", SpaceController, :show
+    live "/follow", FollowLive
     live "/spaces", SpaceLive.Index, :index
     live "/spaces/new", SpaceLive.Index, :new
     live "/spaces/:id/edit", SpaceLive.Index, :edit

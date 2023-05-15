@@ -3,7 +3,6 @@ defmodule PhoenixFrameworkWeb.LightLive do
 
   def mount(_params, _session, socket) do
     socket = assign(socket, brightness: 10)
-
     {:ok, socket}
   end
 
@@ -11,9 +10,8 @@ defmodule PhoenixFrameworkWeb.LightLive do
   def render(assigns) do
     ~H"""
     <h1 class="text-center font-bold text-2xl my-4">Front Porch Light</h1>
-    <div id="light">
-      <div class=" bg-gray-300 py-4 rounded">
-        <span style={"width: #{@brightness}%"}>
+      <div class="flex bg-gray-300 rounded">
+        <span class="text-center bg-yellow-400 py-4 transition" style={"width: #{@brightness}%"}>
           <%= @brightness %>%
         </span>
       </div>
@@ -43,7 +41,7 @@ defmodule PhoenixFrameworkWeb.LightLive do
           On
         </button>
       </div>
-    </div>
+
     """
   end
 
